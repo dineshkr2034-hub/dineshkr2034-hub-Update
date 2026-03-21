@@ -20,8 +20,10 @@ public class FileUtil {
                 sql.append(sc.nextLine() + " ");
             }
             sc.close();     //closes the scanner
-        } catch (IOException e) {
-        }
+        } 
+        catch (IOException e) {
+    e.printStackTrace(); 
+}
 
         return sql.toString();
     }
